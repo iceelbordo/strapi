@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_navigation_links",
+  "info": {
+    "name": "link",
+    "icon": "link"
+  },
+  "options": {},
+  "attributes": {
+    "text": {
+      "type": "string",
+      "required": true,
+      "minLength": 1,
+      "maxLength": 255
+    },
+    "url": {
+      "type": "string",
+      "maxLength": 255,
+      "required": true,
+      "regex": "^https:\\/\\/.+|\\/.*$"
+    }
+  }
+}
