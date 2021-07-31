@@ -1,0 +1,39 @@
+{
+  "collectionName": "components_calendar_schedules",
+  "info": {
+    "name": "schedule",
+    "icon": "calendar"
+  },
+  "options": {},
+  "attributes": {
+    "day": {
+      "type": "enumeration",
+      "enum": [
+        "Sunday",
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday"
+      ],
+      "required": true
+    },
+    "meetingName": {
+      "type": "string",
+      "required": true,
+      "maxLength": 255,
+      "minLength": 1
+    },
+    "startedAt": {
+      "type": "string",
+      "regex": "^[0-9]{2}:[0-9]{2}$",
+      "required": true
+    },
+    "finishedAt": {
+      "type": "string",
+      "regex": "^[0-9]{2}:[0-9]{2}$",
+      "required": true
+    }
+  }
+}
