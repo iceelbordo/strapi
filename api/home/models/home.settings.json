@@ -1,0 +1,41 @@
+{
+  "kind": "singleType",
+  "collectionName": "homes",
+  "info": {
+    "name": "home"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "verse": {
+      "type": "string",
+      "required": true,
+      "maxLength": 255,
+      "minLength": 1
+    },
+    "bookAbbreviation": {
+      "type": "string",
+      "required": true,
+      "maxLength": 255,
+      "minLength": 1
+    },
+    "chapterNumber": {
+      "type": "string",
+      "required": true,
+      "maxLength": 255,
+      "minLength": 1,
+      "regex": "^[0-9]+$"
+    },
+    "verseNumber": {
+      "type": "string",
+      "required": true,
+      "maxLength": 255,
+      "minLength": 1,
+      "regex": "^[0-9]+$"
+    }
+  }
+}
