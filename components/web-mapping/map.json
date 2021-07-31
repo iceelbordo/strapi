@@ -1,0 +1,46 @@
+{
+  "collectionName": "components_web_mapping_maps",
+  "info": {
+    "name": "map",
+    "icon": "map"
+  },
+  "options": {},
+  "attributes": {
+    "address": {
+      "type": "string",
+      "required": true,
+      "maxLength": 255,
+      "minLength": 1
+    },
+    "zip": {
+      "type": "string",
+      "required": true,
+      "maxLength": 255,
+      "minLength": 1
+    },
+    "city": {
+      "type": "string",
+      "required": true,
+      "maxLength": 255,
+      "minLength": 1
+    },
+    "state": {
+      "type": "string",
+      "required": true,
+      "maxLength": 255,
+      "minLength": 1
+    },
+    "country": {
+      "type": "string",
+      "required": true,
+      "maxLength": 255,
+      "minLength": 1
+    },
+    "url": {
+      "type": "string",
+      "required": true,
+      "maxLength": 255,
+      "regex": "^https?:\\/\\/.+$"
+    }
+  }
+}
