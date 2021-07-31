@@ -1,0 +1,27 @@
+{
+  "kind": "singleType",
+  "collectionName": "navbars",
+  "info": {
+    "name": "navbar"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "churchShortName": {
+      "type": "string",
+      "required": true,
+      "maxLength": 255,
+      "minLength": 1
+    },
+    "links": {
+      "type": "component",
+      "repeatable": true,
+      "component": "navigation.link",
+      "required": true
+    }
+  }
+}
