@@ -5,4 +5,21 @@
  * to customize this service
  */
 
-module.exports = {};
+ const { makeTokenizer } = require('@tokenizer/http');
+ const { parseFromTokenizer } = require('music-metadata');
+
+module.exports = {
+  fetchMetadataFromURL: async (audioTrackUrl) => {
+    try {
+      const httpTokenizer = await makeTokenizer(audioTrackUrl);
+      const { format } = await parseFromTokenizer(httpTokenizer);
+      return format
+    } catch(err) {
+      console.log(err);
+      return {
+        status: 'error',
+        message: err.message
+      };
+    }
+  },
+};
