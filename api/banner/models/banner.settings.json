@@ -1,0 +1,39 @@
+{
+  "kind": "singleType",
+  "collectionName": "banners",
+  "info": {
+    "name": "banner",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "shortDescription": {
+      "type": "string",
+      "required": true,
+      "maxLength": 255,
+      "minLength": 1
+    },
+    "longDescription": {
+      "type": "string",
+      "required": true,
+      "maxLength": 255,
+      "minLength": 1
+    },
+    "timer": {
+      "type": "component",
+      "repeatable": false,
+      "component": "clock.timer"
+    },
+    "meetLink": {
+      "type": "component",
+      "repeatable": false,
+      "component": "navigation.link",
+      "required": false
+    }
+  }
+}
