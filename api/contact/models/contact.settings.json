@@ -1,0 +1,38 @@
+{
+  "kind": "singleType",
+  "collectionName": "contacts",
+  "info": {
+    "name": "contact"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "churchName": {
+      "type": "string",
+      "required": true,
+      "maxLength": 255,
+      "minLength": 1
+    },
+    "map": {
+      "type": "component",
+      "repeatable": false,
+      "component": "web-mapping.map",
+      "required": true
+    },
+    "email": {
+      "type": "email",
+      "required": true,
+      "maxLength": 255
+    },
+    "schedules": {
+      "type": "component",
+      "repeatable": true,
+      "required": true,
+      "component": "calendar.schedule"
+    }
+  }
+}
