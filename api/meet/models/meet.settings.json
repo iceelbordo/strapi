@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "meets",
+  "info": {
+    "name": "meet"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true,
+      "maxLength": 255,
+      "minLength": 1
+    },
+    "description": {
+      "type": "string",
+      "required": true,
+      "maxLength": 255,
+      "minLength": 1
+    },
+    "video": {
+      "type": "component",
+      "repeatable": false,
+      "component": "video-hosting-service.video",
+      "required": true
+    },
+    "recordedAt": {
+      "type": "date",
+      "required": true
+    }
+  }
+}
