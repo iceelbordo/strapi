@@ -29,7 +29,7 @@
       "repeatable": false,
       "component": "clock.timer"
     },
-    "meetLink": {
+    "externalLink": {
       "type": "component",
       "repeatable": false,
       "component": "navigation.link",
