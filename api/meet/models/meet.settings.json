@@ -35,8 +35,8 @@
       "required": true
     },
     "preacher": {
-      "model": "preacher",
-      "via": "meets"
+      "via": "meets",
+      "model": "preacher"
     }
   }
 }
