@@ -31,6 +31,10 @@
     "sermons": {
       "via": "preacher",
       "collection": "sermon"
+    },
+    "meets": {
+      "via": "preacher",
+      "collection": "meet"
     }
   }
 }
