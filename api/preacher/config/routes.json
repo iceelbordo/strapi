@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/preachers",
+      "handler": "preacher.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/preachers/count",
+      "handler": "preacher.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/preachers/:id",
+      "handler": "preacher.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/preachers",
+      "handler": "preacher.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/preachers/:id",
+      "handler": "preacher.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/preachers/:id",
+      "handler": "preacher.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
